@@ -22,7 +22,7 @@ namespace ProductApi.Test.Controllers.ProductsControllerTests
             _controller = new ProductsController(
                 _productLogic.Object);
         }
-        
+
         /// <summary>
         ///     Member Data for xUnit that gets basic empty strings
         /// </summary>
