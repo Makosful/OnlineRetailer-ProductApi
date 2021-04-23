@@ -5,6 +5,7 @@ using System.Linq;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using ProductApi.Data;
+using ProductApi.Data.Abstractions;
 using ProductApi.Data.Database;
 using ProductApi.Entities;
 using Xunit;
@@ -15,7 +16,7 @@ namespace ProductApi.Test.Data.ProductRepositoryTests
     public class UpdateProductNameTests : IDisposable
     {
         private readonly ProductContext _context;
-        private readonly ProductRepository _repository;
+        private readonly IProductRepository _repository;
 
         private readonly ITestOutputHelper _output;
 
